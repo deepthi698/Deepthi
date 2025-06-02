@@ -1,0 +1,80 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.business-card {
+  width: 600px;
+  height: 350px;
+  background: black;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card-top {
+  background: linear-gradient(to right, #34b6e4, #1a8fb8);
+  color: white;
+  padding: 40px 20px 60px;
+  text-align: center;
+  position: relative;
+  clip-path: ellipse(150% 100% at 50% 0%);
+}
+
+.logo {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.company-name {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.your-name {
+  font-size: 20px;
+  font-weight: bold;
+  color:white;
+}
+
+.your-position {
+  color: #666;
+  margin-top: 5px;
+}
+
+.right-section {
+  flex: 1.2;
+}
+
+.right-section ul {
+  list-style: none;
+  padding: 0;
+  color:white;
+}
+
+.right-section li {
+  margin: 10px 0;
+  position: relative;
+  padding-left: 25px;
+}
+
+.right-section li::before {
+  content: '•';
+  position: absolute;
+
+  }
